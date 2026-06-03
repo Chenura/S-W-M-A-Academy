@@ -1,0 +1,199 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0b0b0b;
+    color:white;
+    overflow-x:hidden;
+}
+
+.hero{
+    height:100vh;
+    background:url('poster.jpg') center/cover no-repeat;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.75);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:800px;
+    padding:20px;
+}
+
+.logo{
+    width:320px;
+    max-width:90%;
+    margin-bottom:20px;
+    border-radius:12px;
+}
+
+.hero h1{
+    font-size:4rem;
+    color:#ffd000;
+    margin-bottom:10px;
+}
+
+.hero h2{
+    font-size:2rem;
+    color:white;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 35px;
+    background:#ff0000;
+    color:white;
+    text-decoration:none;
+    border-radius:40px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#ffd000;
+    color:black;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.about,
+.training,
+.schedule,
+.contact{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.about h2,
+.training h2,
+.schedule h2,
+.contact h2,
+.poster-section h2{
+    font-size:3rem;
+    margin-bottom:30px;
+    color:#ffd000;
+}
+
+.about p{
+    max-width:900px;
+    margin:auto;
+    line-height:2;
+    font-size:1.1rem;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-top:50px;
+}
+
+.card{
+    background:#1b1b1b;
+    padding:40px 25px;
+    border-radius:20px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:#ff0000;
+}
+
+.card h3{
+    margin-bottom:20px;
+    font-size:1.8rem;
+}
+
+.poster-section{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.poster{
+    width:90%;
+    max-width:700px;
+    border-radius:20px;
+    box-shadow:0 0 30px rgba(255,0,0,0.5);
+}
+
+.schedule-box{
+    background:#1a1a1a;
+    display:inline-block;
+    padding:40px;
+    border-radius:20px;
+}
+
+.schedule-box h3{
+    color:#ff0000;
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+.schedule-box p{
+    margin:10px 0;
+    font-size:1.2rem;
+}
+
+.contact h1{
+    font-size:3rem;
+    margin:20px 0;
+    color:#ffd000;
+}
+
+footer{
+    background:black;
+    text-align:center;
+    padding:30px;
+    font-size:0.9rem;
+}
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2.5rem;
+    }
+
+    .hero h2{
+        font-size:1.4rem;
+    }
+
+    .about h2,
+    .training h2,
+    .schedule h2,
+    .contact h2,
+    .poster-section h2{
+        font-size:2rem;
+    }
+
+    .contact h1{
+        font-size:2rem;
+    }
+
+}
